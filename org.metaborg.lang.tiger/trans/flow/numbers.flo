@@ -2,21 +2,12 @@ module flow/numbers
 
 flow rules
 
-Int(_): this
+Int(_): opaque
 
 Uminus(e): e
 
-Times(e1, e2): e1 || e2
-Divide(e1, e2): e1 || e2
-Plus(e1, e2): e1 || e2
-Minus(e1, e2): e1 || e2
+Times(_, _), Divide(_, _), Plus(_, _), Minus(_, _): parallel
 
-Eq(e1, e2): e1 || e2
-Neq(e1, e2): e1 || e2
-Gt(e1, e2): e1 || e2
-Lt(e1, e2): e1 || e2
-Geq(e1, e2): e1 || e2
-Leq(e1, e2): e1 || e2
+Eq(_, _), Neq(_, _), Gt(_, _), Lt(_, _), Geq(_, _), Leq(_, _): parallel
 
-Or(e1, e2): e1 || e2
-And(e1, e2): e1 || e2
+Or(_, _), And(_, _): parallel

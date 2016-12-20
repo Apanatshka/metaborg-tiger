@@ -5,6 +5,6 @@ flow rules
 VarDec(_, _, expr): expr
 VarDecNoType(_, expr): expr
 
-Var(_): this
+Var(_): opaque
 
 Assign(_, expr): expr

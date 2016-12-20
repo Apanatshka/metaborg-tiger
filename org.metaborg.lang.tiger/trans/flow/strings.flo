@@ -2,4 +2,4 @@ module flow/strings
 
 flow rules
 
-String(_): this
+String(_): opaque

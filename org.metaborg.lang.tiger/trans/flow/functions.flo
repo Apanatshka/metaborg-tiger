@@ -9,4 +9,4 @@ ProcDec(_, _, expr): expr
 FunDec(_, _, _, expr): expr
 
 Call(f, exps): par exps, d
-  where f |-> d
+  where f |-> d // .body
