@@ -1,0 +1,10 @@
+module flow/variables
+
+flow rules
+
+VarDec(_, _, expr): expr
+VarDecNoType(_, expr): expr
+
+Var(_): this
+
+Assign(_, expr): expr

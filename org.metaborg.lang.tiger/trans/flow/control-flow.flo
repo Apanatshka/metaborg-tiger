@@ -1,0 +1,16 @@
+module flow/control-flow
+
+flow rules
+
+Seq(exprs): seq exprs
+
+If(cond, then, else): cond, (then || else)
+
+IfThen(cond, then): cond, (then || this)
+
+While(cond, body): cond, (body, loop || this)
+
+For(_, from, to, body): (from || to), body
+
+b@Break: l
+  where b |-> l

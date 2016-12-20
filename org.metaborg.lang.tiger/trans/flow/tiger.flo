@@ -1,0 +1,14 @@
+module flow/tiger
+
+imports flow/arrays
+imports flow/bindings
+imports flow/control-flow
+imports flow/functions
+imports flow/numbers
+imports flow/records
+imports flow/strings
+imports flow/variables
+
+flow rules
+
+  Mod(e): e

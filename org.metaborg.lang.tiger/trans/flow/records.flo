@@ -1,0 +1,12 @@
+module flow/records
+
+flow rules
+
+// This should be default for a leaf node of the AST 
+// NilExp(): this
+
+Record(_, inits): par inits
+
+InitField(_, expr): expr
+
+FieldVar(expr, _): expr

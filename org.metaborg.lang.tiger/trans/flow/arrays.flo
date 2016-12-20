@@ -1,0 +1,7 @@
+module flow/arrays
+
+flow rules
+
+Array(t, e1, e2): t || e1 || e2
+
+Subscript(e1, e2): e1 || e2

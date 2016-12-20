@@ -1,0 +1,5 @@
+module flow/strings
+
+flow rules
+
+String(_): this
