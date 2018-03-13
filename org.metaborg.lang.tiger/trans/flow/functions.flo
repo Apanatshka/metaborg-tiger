@@ -2,9 +2,9 @@ module flow/functions
 
 flow rules
 
-FunDecs(fundecs): seq fundecs
+FunDecs(fundecs): opaque
 
-ProcDec(_, _, expr): expr
+ProcDec(d, _, expr): expr
 
 FunDec(_, _, _, expr): expr
 

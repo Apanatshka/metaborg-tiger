@@ -10,7 +10,7 @@ IfThen(cond, then): cond, (then || end)
 
 While(cond, body): cond, (body, jump cond || end)
 
-For(_, from, to, body): (from || to), body
+For(_, from, to, body): (from || to), body, (jump body || end) // broken
 
-b@Break: l
+b@Break: l.next
   where b |-> l // .parentStatement.next
